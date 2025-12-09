@@ -48,3 +48,23 @@ backend/.env.local
 *secret*
 *key*
 !package.json
+
+# Sensitive documentation files (setup instructions, troubleshooting guides)
+# These contain sensitive information like API keys, passwords, connection strings, etc.
+*.md
+!README.md
+backend/*.md
+!backend/README.md
+
+# Test files that may contain sensitive information
+test-*.js
+backend/test-*.js
+backend/check-env.js
+
+# Configuration files with sensitive paths/credentials
+cloudflared-config-example.yml
+*.yml
+!*.config.js
+
+# Batch files that may contain sensitive commands
+*.bat
