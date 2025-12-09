@@ -1,0 +1,29 @@
+{
+  "name": "jm-placemats-backend",
+  "version": "1.0.0",
+  "description": "Backend API for JM Placemats",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/scripts/seedProducts.js",
+    "update-set-prices": "node src/scripts/updateSetPrices.js",
+    "test-config": "node test-connection.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "mongoose": "^8.0.3",
+    "nodemailer": "^7.0.11",
+    "stripe": "^14.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
